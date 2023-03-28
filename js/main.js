@@ -32,3 +32,28 @@ let numeroRandom = Math.floor(Math.random() * 100) + 1;
 let passwordRandom = (nome + cognome + colorePreferito + numeroRandom);
 
 console.log(passwordRandom);
+
+
+
+
+/* HTML */
+document.getElementById("name").innerHTML = nome;
+document.getElementById("lastname").innerHTML = cognome;
+document.getElementById("color").innerHTML = colorePreferito;
+document.getElementById("firstnumber").innerHTML = primoNumero;
+document.getElementById("secondnumber").innerHTML = secondoNumero;
+document.getElementById("randomnumber").innerHTML = numeroRandom;
+
+function firstPassword() {
+    document.getElementById("firstpassword").innerHTML = password;
+}
+
+
+function secondPassword() {
+    document.getElementById("secondpassword").innerHTML = passwordQuoziente;
+}
+
+
+function thirdPassword() {
+    document.getElementById("thirdpassword").innerHTML = passwordRandom;
+}
